@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MediCare | Hospital Appointment</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">
+      <span>✚</span> MediCare
+    </div>
+
+    <nav id="navMenu">
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#doctors">Doctors</a>
+      <a href="#appointment">Appointment</a>
+    </nav>
+
+    <a href="#appointment" class="nav-btn">Book Now</a>
+
+    <button class="menu-btn" id="menuBtn">☰</button>
+  </header>
+
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <span class="tag">Trusted Healthcare • Better Care</span>
+
+      <h1>Your Health,<br><span>Our Priority.</span></h1>
+
+      <p>
+        Find experienced doctors, explore healthcare services,
+        and book your appointment easily from anywhere.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#appointment" class="primary-btn">Book an Appointment</a>
+        <a href="#doctors" class="secondary-btn">Meet Our Doctors</a>
+      </div>
+
+      <div class="stats">
+        <div>
+          <strong>25+</strong>
+          <small>Specialists</small>
+        </div>
+        <div>
+          <strong>10k+</strong>
+          <small>Patients</small>
+        </div>
+        <div>
+          <strong>15+</strong>
+          <small>Services</small>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-card">
+      <div class="doctor-icon">👩‍⚕️</div>
+      <div>
+        <span>Available Today</span>
+        <h3>Expert Medical Care</h3>
+        <p>Professional doctors ready to help you.</p>
+      </div>
+      <div class="check">✓</div>
+    </div>
+  </section>
+
+
+  <!-- Services -->
+  <section class="section" id="services">
+    <div class="section-heading">
+      <span>OUR SERVICES</span>
+      <h2>Healthcare made simple</h2>
+      <p>Quality medical services designed around your needs.</p>
+    </div>
+
+    <div class="service-grid">
+
+      <div class="service-card">
+        <div class="service-icon">🫀</div>
+        <h3>Cardiology</h3>
+        <p>Professional diagnosis and treatment for heart-related conditions.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">🧠</div>
+        <h3>Neurology</h3>
+        <p>Specialized care for the brain, nerves and nervous system.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">🦷</div>
+        <h3>Dentistry</h3>
+        <p>Complete dental care for healthy and confident smiles.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">👶</div>
+        <h3>Pediatrics</h3>
+        <p>Compassionate healthcare for infants, children and teenagers.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">🩺</div>
+        <h3>General Medicine</h3>
+        <p>Everyday healthcare, diagnosis and preventive medical care.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">🔬</div>
+        <h3>Laboratory</h3>
+        <p>Reliable diagnostic testing and laboratory services.</p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- Doctors -->
+  <section class="section doctors-section" id="doctors">
+
+    <div class="section-heading">
+      <span>OUR SPECIALISTS</span>
+      <h2>Meet our doctors</h2>
+      <p>Experienced professionals dedicated to your wellbeing.</p>
+    </div>
+
+    <div class="doctor-grid">
+
+      <div class="doctor-card">
+        <div class="doctor-photo photo-one">👩‍⚕️</div>
+        <div class="doctor-info">
+          <span>Cardiologist</span>
+          <h3>Dr. Sarah Ahmed</h3>
+          <p>8+ Years Experience</p>
+          <button class="doctor-btn" data-doctor="Dr. Sarah Ahmed">
+            Book with Doctor
+          </button>
+        </div>
+      </div>
+
+      <div class="doctor-card">
+        <div class="doctor-photo photo-two">👨‍⚕️</div>
+        <div class="doctor-info">
+          <span>Neurologist</span>
+          <h3>Dr. Hamza Khan</h3>
+          <p>10+ Years Experience</p>
+          <button class="doctor-btn" data-doctor="Dr. Hamza Khan">
+            Book with Doctor
+          </button>
+        </div>
+      </div>
+
+      <div class="doctor-card">
+        <div class="doctor-photo photo-three">👩‍⚕️</div>
+        <div class="doctor-info">
+          <span>Pediatrician</span>
+          <h3>Dr. Ayesha Malik</h3>
+          <p>7+ Years Experience</p>
+          <button class="doctor-btn" data-doctor="Dr. Ayesha Malik">
+            Book with Doctor
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- Appointment -->
+  <section class="appointment-section" id="appointment">
+
+    <div class="appointment-container">
+
+      <div class="appointment-text">
+        <span>BOOK YOUR VISIT</span>
+        <h2>Schedule an appointment</h2>
+        <p>
+          Fill in your details and choose your preferred doctor,
+          service, date and time.
+        </p>
+
+        <div class="appointment-points">
+          <p>✓ Easy online booking</p>
+          <p>✓ Experienced specialists</p>
+          <p>✓ Flexible appointment times</p>
+          <p>✓ Quick confirmation</p>
+        </div>
+      </div>
+
+
+      <form id="appointmentForm" class="appointment-form">
+
+        <div class="form-row">
+
+          <div class="input-group">
+            <label for="name">Full Name</label>
+            <input
+              type="text"
+              id="name"
+              placeholder="Enter your name"
+              required
+            >
+          </div>
+
+          <div class="input-group">
+            <label for="phone">Phone Number</label>
+            <input
+              type="tel"
+              id="phone"
+              placeholder="03XX XXXXXXX"
+              required
+            >
+          </div>
+
+        </div>
+
+
+        <div class="form-row">
+
+          <div class="input-group">
+            <label for="doctor">Choose Doctor</label>
+
+            <select id="doctor" required>
+              <option value="">Select a doctor</option>
+              <option>Dr. Sarah Ahmed</option>
+              <option>Dr. Hamza Khan</option>
+              <option>Dr. Ayesha Malik</option>
+              <option>Any Available Doctor</option>
+            </select>
+          </div>
+
+          <div class="input-group">
+            <label for="service">Service</label>
+
+            <select id="service" required>
+              <option value="">Select service</option>
+              <option>Cardiology</option>
+              <option>Neurology</option>
+              <option>Dentistry</option>
+              <option>Pediatrics</option>
+              <option>General Medicine</option>
+              <option>Laboratory</option>
+            </select>
+          </div>
+
+        </div>
+
+
+        <div class="form-row">
+
+          <div class="input-group">
+            <label for="date">Appointment Date</label>
+            <input type="date" id="date" required>
+          </div>
+
+          <div class="input-group">
+            <label for="time">Preferred Time</label>
+
+            <select id="time" required>
+              <option value="">Select time</option>
+              <option>09:00 AM</option>
+              <option>10:00 AM</option>
+              <option>11:00 AM</option>
+              <option>12:00 PM</option>
+              <option>02:00 PM</option>
+              <option>03:00 PM</option>
+              <option>04:00 PM</option>
+              <option>05:00 PM</option>
+            </select>
+          </div>
+
+        </div>
+
+
+        <div class="input-group">
+          <label for="message">Additional Message</label>
+          <textarea
+            id="message"
+            rows="4"
+            placeholder="Tell us anything we should know..."
+          ></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">
+          Confirm Appointment →
+        </button>
+
+        <div id="successMessage" class="success-message">
+          <span>✓</span>
+          <div>
+            <strong>Appointment Confirmed!</strong>
+            <p>Your appointment request has been submitted successfully.</p>
+          </div>
+        </div>
+
+      </form>
+
+    </div>
+  </section>
+
+
+  <!-- Contact -->
+  <section class="contact-section">
+
+    <div>
+      <span>NEED HELP?</span>
+      <h2>We're here for you.</h2>
+      <p>Contact our support team for assistance with appointments.</p>
+    </div>
+
+    <div class="contact-details">
+      <div>
+        <strong>📞 Call Us</strong>
+        <p>+92 300 1234567</p>
+      </div>
+
+      <div>
+        <strong>✉ Email</strong>
+        <p>care@medicare.com</p>
+      </div>
+
+      <div>
+        <strong>📍 Location</strong>
+        <p>Islamabad, Pakistan</p>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- Footer -->
+  <footer>
+    <div class="logo">
+      <span>✚</span> MediCare
+    </div>
+
+    <p>© 2026 MediCare Hospital. All rights reserved.</p>
+
+    <div class="footer-links">
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#doctors">Doctors</a>
+    </div>
+  </footer>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>c
